@@ -7,7 +7,8 @@
     tools:context="com.zyldzs.zkspannablestring.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_spannablestring"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"

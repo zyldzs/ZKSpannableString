@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZKSpannableString.iml" filepath="$PROJECT_DIR$/ZKSpannableString.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zkspannablestring/zkspannablestring.iml" filepath="$PROJECT_DIR$/zkspannablestring/zkspannablestring.iml" />
     </modules>
   </component>
 </project>
