@@ -3,4 +3,4 @@
 
 先上效果图:<br>
 
-![](https://https://github.com/zyldzs/ZKSpannableString/image/abc.jpg)
+![](https://github.com/zyldzs/ZKSpannableString/blob/master/image/abc.jpg)
