@@ -24,5 +24,5 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation 'junit:junit:4.12'
 
-    compile 'com.zyldzs:ZKSpannableString:1.0.0'
+    compile 'com.zyldzs:ZKSpannableString:1.0.1'
 }

@@ -29,13 +29,13 @@ public class RoundBackgroundColorSpan extends ReplacementSpan {
     private Paint mBgPaint; //icon背景画笔
     private Paint mTextPaint; //icon文字画笔
 
-    public RoundBackgroundColorSpan(Context context, int bgColorResId, String text, float mTextSize, int mTextColorResId) {
+    public RoundBackgroundColorSpan(Context context, int bgColorResId, String text, float mTextSize, int mTextColorResId,float mRadius) {
         super();
         if (TextUtils.isEmpty(text)) {
             return;
         }
         //初始化默认数值
-        initDefaultValue(context, bgColorResId, text,mTextSize,mTextColorResId);
+        initDefaultValue(context, bgColorResId, text,mTextSize,mTextColorResId,mRadius);
         //计算背景的宽度
         this.mBgWidth = caculateBgWidth(text);
         //初始化画笔
@@ -96,13 +96,14 @@ public class RoundBackgroundColorSpan extends ReplacementSpan {
      *
      * @param context
      */
-    private void initDefaultValue(Context context, int bgColorResId, String text, float mTextSize, int mTextColorResId) {
+    private void initDefaultValue(Context context, int bgColorResId, String text, float mTextSize, int mTextColorResId,float mRadius) {
         this.mContext = context.getApplicationContext();
         this.mBgColorResId = bgColorResId;
         this.mText = text;
         this.mBgHeight = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 17f, mContext.getResources().getDisplayMetrics());
         this.mRightMargin = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 2, mContext.getResources().getDisplayMetrics());
-        this.mRadius = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 2, mContext.getResources().getDisplayMetrics());
+//        this.mRadius = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 2, mContext.getResources().getDisplayMetrics());
+        this.mRadius = mRadius;
         this.mTextSize = mTextSize;
         this.mTextColorResId = mTextColorResId;
     }

@@ -10,8 +10,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
     }
 
     buildTypes {
@@ -39,7 +39,7 @@ publish {
     userOrg = 'zyldzs'//bintray.com的用户名
     groupId = 'com.zyldzs'//jcenter上的路径
     artifactId = 'ZKSpannableString'//项目名称
-    publishVersion = '1.0.0'//版本号
+    publishVersion = '1.0.1'//版本号
     desc = '设置圆角背景的SpannableString'//描述，不重要
     website = siteUrl//项目主页
 }
